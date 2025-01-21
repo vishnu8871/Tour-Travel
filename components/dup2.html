@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourist Places in Andhra Pradesh</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container text-center mt-5">
+        <h2 class="text-primary mb-4">Most Visited Tourist Places in Andhra Pradesh</h2>
+        <div class="row">
+            <!-- Tirupati -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card shadow">
+                    <img src="tirupati.jpeg" class="card-img-top" alt="Tirupati">
+                    <div class="card-body">
+                        <h5 class="card-title">Tirupati</h5>
+                        <p class="card-text">Famous for the Tirumala Venkateswara Temple.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#tirupatiModal">Show More</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Araku Valley -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card shadow">
+                    <img src="araku.jpeg" class="card-img-top" alt="Araku Valley">
+                    <div class="card-body">
+                        <h5 class="card-title">Araku Valley</h5>
+                        <p class="card-text">Known for coffee plantations and tribal culture.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#arakuModal">Show More</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vizag -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card shadow">
+                    <img src="vizag.jpeg" class="card-img-top" alt="Vizag">
+                    <div class="card-body">
+                        <h5 class="card-title">Visakhapatnam</h5>
+                        <p class="card-text">Famous for beaches and a submarine museum.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#vizagModal">Show More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tirupati Modal -->
+<div class="modal fade" id="tirupatiModal" tabindex="-1" aria-labelledby="tirupatiModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Tirupati</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div id="tirupatiCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="tirupati1.jpeg" class="d-block w-100" alt="Tirupati 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="tirupati2.jpeg" class="d-block w-100" alt="Tirupati 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="tirupati3.jpeg" class="d-block w-100" alt="Tirupati 3">
+                        </div>
+                    </div>
+                    <p style="text-align: justify;">Tirupati is one of the most famous pilgrimage destinations in India, known for the sacred Tirumala Venkateswara Temple. Dedicated to Lord Venkateswara, the temple attracts millions of devotees from across the world each year. It is considered one of the richest temples globally due to the enormous donations made by devotees. The town is nestled in the scenic Seshachalam Hills, offering a serene and spiritual atmosphere. Apart from the main temple, Tirupati also boasts other religious sites such as the Sri Kapileswara Swamy Temple and ISKCON Temple. The laddu prasadam offered at the temple is immensely popular among visitors. The annual Brahmotsavam festival is celebrated with great grandeur, drawing huge crowds. Tirupati is well-connected by road, rail, and air, making it easily accessible. Visitors can also explore nearby attractions like Talakona Waterfalls and Chandragiri Fort. The town is known for its well-organized crowd management and disciplined environment, ensuring a peaceful pilgrimage experience.</p>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#tirupatiCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#tirupatiCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-success" onclick="redirectToDup()">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Araku Modal -->
+<div class="modal fade" id="arakuModal" tabindex="-1" aria-labelledby="arakuModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Araku Valley</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div id="arakuCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="araku1.jpg" class="d-block w-100" alt="Araku 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="araku2.jpg" class="d-block w-100" alt="Araku 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="araku3.jpg" class="d-block w-100" alt="Araku 3">
+                        </div>
+                    </div>
+                    <p style="text-align: justify;">Araku Valley is a picturesque hill station in the Eastern Ghats of Andhra Pradesh, known for its lush green landscapes and pleasant weather. The valley is renowned for its coffee plantations, producing high-quality organic coffee that has gained global recognition. The region is also famous for its rich tribal culture, and visitors can explore the Tribal Museum to learn about their heritage and traditions. One of the major attractions in Araku is the Borra Caves, known for their stunning stalactite and stalagmite formations. The scenic train journey from Visakhapatnam to Araku, passing through tunnels and dense forests, is a major highlight for tourists. The valley is also home to beautiful waterfalls such as Katiki and Chaparai, which add to its natural charm. Visitors can enjoy adventure activities like trekking and camping in the hills. The local Dhimsa dance, performed by tribal women, is a cultural delight. Araku is a perfect getaway for those seeking a refreshing retreat amidst nature. The fresh air, misty hills, and serene surroundings make it a must-visit destination in Andhra Pradesh.</p>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#arakuCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#arakuCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-success" onclick="redirectToDup()">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Vizag Modal -->
+<div class="modal fade" id="vizagModal" tabindex="-1" aria-labelledby="vizagModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Visakhapatnam</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div id="vizagCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="vizag1.jpg" class="d-block w-100" alt="Vizag 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="vizag2.jpg" class="d-block w-100" alt="Vizag 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="vizag3.jpg" class="d-block w-100" alt="Vizag 3">
+                        </div>
+                    </div>
+                    <p style="text-align: justify;">Visakhapatnam, often called Vizag, is a coastal city known for its pristine beaches and vibrant atmosphere. It is one of the largest port cities in India and serves as a major industrial hub. The city boasts several beautiful beaches, including RK Beach, Yarada Beach, and Rushikonda Beach, which attract tourists for their scenic beauty and water activities. Vizag is also home to the famous INS Kurusura Submarine Museum, offering insights into the naval history of India. Kailasagiri Hilltop Park provides breathtaking views of the coastline and the cityscape. Simhachalam Temple, dedicated to Lord Narasimha, is a significant spiritual site in the region. The city's cuisine, featuring seafood specialties, is a major attraction for food lovers. Vizag is also known for its eco-tourism spots like Kambalakonda Wildlife Sanctuary and Araku Valley nearby. The well-developed infrastructure and connectivity make it a popular tourist and business destination. Whether for a relaxing beach holiday or an adventurous exploration, Visakhapatnam has something for everyone.</p>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#vizagCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#vizagCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-success" onclick="redirectToDup()">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function redirectToDup() {
+        window.location.href = 'dup.html';
+    }
+</script>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>
